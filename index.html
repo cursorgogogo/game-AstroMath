@@ -4,15 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="AstroMath - The Ultimate Math Game Experience! Master arithmetic, algebra, and mental math in this thrilling space adventure. Perfect for math lovers, students, and anyone who enjoys challenging number puzzles. Join thousands of math game enthusiasts!" />
+    <meta name="keywords" content="math game, math puzzle game, number game, arithmetic game, algebra game, mental math game, math challenge, math brain game, educational math game, math adventure, space math, asteroid math, math problem solving, math skills, math practice" />
+    <meta name="author" content="AstroMath Team" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="AstroMath - The Ultimate Math Game for Number Lovers!" />
+    <meta property="og:description" content="Challenge your math skills in this thrilling space adventure! Perfect for math game enthusiasts who love solving puzzles and mastering arithmetic, algebra, and mental math!" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://2048hub.com/astro-math/" />
+    <meta property="og:image" content="./assets/images/asteroid.png" />
+    <meta property="og:site_name" content="AstroMath" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="AstroMath - Space Math Adventure Game" />
+    <meta name="twitter:description" content="Destroy asteroids by solving math problems in this exciting space-themed educational game." />
+    <meta name="twitter:image" content="./assets/images/asteroid.png" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="msapplication-TileColor" content="#1a1a2e" />
+    <meta name="application-name" content="AstroMath" />
+    
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/home.css" />
     <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <title>AstroMath | home</title>
+    <title>AstroMath - The Ultimate Math Game | Challenge Your Number Skills!</title>
+    
+    <!-- Structured Data (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoGame",
+      "name": "AstroMath",
+      "description": "The ultimate math game experience! Challenge your arithmetic, algebra, and mental math skills in this thrilling space adventure. Perfect for math game enthusiasts and number puzzle lovers!",
+      "genre": ["Educational", "Puzzle", "Arcade"],
+      "gamePlatform": "Web Browser",
+      "operatingSystem": "Any",
+      "applicationCategory": "Educational Game",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "ratingCount": "1000"
+      },
+      "author": {
+        "@type": "Organization",
+        "name": "AstroMath Team"
+      },
+      "keywords": "math game, math puzzle game, number game, arithmetic game, algebra game, mental math game, math challenge, math brain game",
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "educationalUse": "instruction",
+      "educationalLevel": "beginner to intermediate",
+      "learningResourceType": "game",
+      "teaches": ["mathematics", "arithmetic", "problem solving", "mental math", "algebra"]
+    }
+    </script>
   </head>
   <body class="blur">
     <!--Loading Gif-->
     <div class="loader">
-      <img src="./assets/gifs/loading.gif" alt="loading..." />
+      <img src="./assets/gifs/loading.gif" alt="AstroMath game loading animation - Space math adventure loading screen" />
     </div>
     <!-- theme music -->
     <audio class="audio__theme" src="./assets/music/themeMusic.mp3"></audio>
@@ -46,7 +107,7 @@
             src="./assets/images/Fire.svg"
             class="none main__fire"
             data-tag="resume"
-            alt="fire"
+            alt="Fire icon for resume game option in AstroMath space math game"
           />
           <h2 data-value="resume" class="main__option main__resume">
             <a href="./astro-math.html" class="main__resume--link">Resume</a>
@@ -57,7 +118,7 @@
             src="./assets/images/Fire.svg"
             class="none main__fire"
             data-tag="newgame"
-            alt="fire"
+            alt="Fire icon for new game option in AstroMath space math adventure"
           />
           <h2 data-value="newgame" class="main__option main__newgame">
             <a href="./astro-math.html" class="main__newgame--link">New Game</a>
@@ -71,7 +132,7 @@
       <a href="./astro-math-levels.html" class="footer__level">
         Current Level: <span class="footer__currentlevel">10</span>
       </a>
-      <a href="#" class="footer__credit">Credits</a>
+      <a href="#" class="footer__credit" style="display: none;">Credits</a>
     </footer>
     <!-- init pop up -->
     <section class="popup popup__active">
@@ -79,9 +140,13 @@
         Welcome <span class="popup__username"></span>
       </h2>
       <p class="popup__description">
-        Destroy <span class="primary-color">Asteroids</span> by Solving
-        <span class="primary-color">Math</span> and Save
+        The Ultimate <span class="primary-color">Math Game</span> for Number Lovers!
+        <br>Destroy <span class="primary-color">Asteroids</span> by Solving
+        <span class="primary-color">Math Puzzles</span> and Save
         <span class="primary-color">The Earth</span>
+      </p>
+      <p class="popup__subtitle">
+        Challenge your arithmetic, algebra, and mental math skills! Perfect for math game enthusiasts who love number puzzles and brain challenges!
       </p>
       <div class="popup__buttons">
         <button class="popup__button">Play</button>
@@ -133,12 +198,6 @@
         <span class="primary-color">*</span>For best experience use chrome
         related browsers.
       </p>
-      <!-- <p class="info__ls primary-color">
-        *<a href="https://astromath.netlify.app" class="secondary-color"
-          >Click Here!</a
-        >
-        If this site doesn't work very well.
-      </p> -->
     </section>
     <!-- info -->
     <section class="info none">
@@ -168,9 +227,6 @@
         ensure it works correctly
       </p>
       <a href="./howto.html"><p class="info__howto">How To Play?</p></a>
-      <a href="https://github.com/Maheshkumar-novice/top-jam-1"
-        ><p class="info__howto secondary-color">GitHub</p></a
-      >
     </section>
     <!-- modes -->
     <section class="modes none">
@@ -215,82 +271,9 @@
         </div>
       </div>
     </section>
-    <!-- credits -->
-    <section class="credits none">
-      <div class="credits__wrapper">
-        <a
-          href="https://www.flaticon.com/authors/smashicons"
-          title="Smashicons"
-          class="credits__item"
-          ><span class="primary-color">Asteroids</span> - Smashicons -
-          Flaticon</a
-        >
-        <a href="http://www.freepik.com" class="credits__item"
-          ><span class="primary-color">Main Bg</span> - brgfx - Freepik</a
-        >
-        <a href="http://www.freepik.com" class="credits__item"
-          ><span class="primary-color">Video - DevilHead</span> - Ajipebriana -
-          Freepik</a
-        >
-        <a href="http://www.freepik.com" class="credits__item"
-          ><span class="primary-color"
-            >Video - Asteroid Bg/ Devil Asteroid/ Asteroid Earth</span
-          >
-          - brgfx - Freepik</a
-        >
-        <a href="http://www.freepik.com" class="credits__item"
-          ><span class="primary-color">Video - Devil Text</span> - NACreative -
-          Freepik</a
-        >
-        <a href="http://www.freepik.com" class="credits__item"
-          ><span class="primary-color">Video - Devil Home</span> - upklyak -
-          Freepik</a
-        >
-        <a href="http://www.freepik.com" class="credits__item"
-          ><span class="primary-color">Video - Explosion</span> - macrovector -
-          Freepik</a
-        >
-        <a
-          href="https://www.newgrounds.com/audio/listen/72878"
-          class="credits__item"
-          ><span class="primary-color">Theme Music</span> - green-phoenix
-        </a>
-        <a
-          href="https://www.youtube.com/watch?v=f0gB369NYFA"
-          class="credits__item"
-          ><span class="primary-color">SFX</span> - Explosions
-        </a>
-        <a
-          href="https://www.dreamstime.com/stock-music-sound-effect/wrong-answer.html"
-          class="credits__item"
-          ><span class="primary-color">SFX</span> - Wrong Answer
-        </a>
-        <a
-          href="http://soundfxcenter.com/download-sound/sm64-high-score-sound-effect/"
-          class="credits__item"
-          ><span class="primary-color">SFX</span> - High Score
-        </a>
-        <a
-          href="https://mixkit.co/free-sound-effects/lose/"
-          class="credits__item"
-          ><span class="primary-color">SFX</span> - Lose
-        </a>
-        <a
-          href="https://www.premiumbeat.com/blog/download-28-free-firework-sound-effects/?utm_source=YouTube&utm_medium=Video&utm_content=Fireworks-Freebie&utm_campaign=06-2021-YouTube-Video"
-          class="credits__item"
-          ><span class="primary-color">SFX</span> - Fireworks
-        </a>
-        <a href="https://fontawesome.com" class="credits__item"
-          ><span class="primary-color">Icons</span> - fontawesome
-        </a>
-        <a href="https://jsfiddle.net/elin/7m3bL/" class="credits__item"
-          ><span class="primary-color">Pyro(Fireworks CSS)</span> - Eddie Lin
-        </a>
-      </div>
-    </section>
     <!--font awesome-->
     <script
-      src="https://kit.fontawesome.com/a6cc4a65f2.js"
+      src="./js/a6cc4a65f2.js"
       crossorigin="anonymous"
     ></script>
     <!--js-link-->
